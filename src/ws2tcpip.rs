@@ -25,3 +25,12 @@ pub const IP_BLOCK_SOURCE: ::c_int = 17;
 pub const IP_UNBLOCK_SOURCE: ::c_int = 18;
 pub const IP_PKTINFO: ::c_int = 19;
 pub const IP_RECEIVE_BROADCAST: ::c_int = 22;
+STRUCT!{struct SOCKADDR_IN6 {
+    sin6_family: ADDRESS_FAMILY,
+    sin6_port: USHORT,
+    sin6_flowinfo: ULONG,
+    sin6_addr: IN6_ADDR,
+    sin6_scope_id: ULONG,
+}}
+pub type PSOCKADDR_IN6 = *mut SOCKADDR_IN6;
+pub type LPSOCKADDR_IN6 = *mut SOCKADDR_IN6;

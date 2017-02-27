@@ -27,6 +27,7 @@
 #[cfg(feature = "shared-hidsdi")] pub mod hidsdi;
 #[cfg(feature = "shared-hidusage")] pub mod hidusage;
 #[cfg(feature = "shared-inaddr")] pub mod inaddr;
+#[cfg(feature = "shared-in6addr")] pub mod in6addr;
 #[cfg(feature = "shared-ksmedia")] pub mod ksmedia;
 #[cfg(feature = "shared-lmcons")] pub mod lmcons;
 #[cfg(feature = "shared-minwindef")] pub mod minwindef;
